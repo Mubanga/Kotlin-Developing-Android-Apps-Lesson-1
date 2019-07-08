@@ -1,6 +1,6 @@
 package com.learnprogramming.academy.diceroller
 
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageView
@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         _btnRoll.text = "Let's Roll"
-        _imgDiceRoll.setImageResource(R.drawable.dice_2)
+        _imgDiceRoll.setImageResource(R.drawable.empty_dice)
         _btnRoll.setOnClickListener {
             rollDice()
         }
